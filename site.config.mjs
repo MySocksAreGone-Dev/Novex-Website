@@ -2,7 +2,7 @@
 export default {
   name: 'Novex Client',
   version: '0.1.0',
-  origin: 'https://novex.mcstone.no',
+  origin: 'https://mysocksaregone-dev.github.io/Novex-Website',
   repository: 'https://github.com/MySocksAreGone-Dev/Novex-Client',
   websiteRepository: 'https://github.com/MySocksAreGone-Dev/Novex-Website',
   release: 'https://github.com/MySocksAreGone-Dev/Novex-Client/releases/tag/v0.1.0',

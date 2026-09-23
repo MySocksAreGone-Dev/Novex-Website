@@ -17,7 +17,7 @@ npm run build
 npm test
 ```
 
-The build generates Home, Download, Privacy, Terms and License pages. It copies only public assets to `dist/`. The checks verify local links/assets, metadata, the custom-domain file, and versioned download URLs. All page/asset links are relative, so they work at both a Pages repository subpath and the custom domain.
+The build generates Home, Download, Privacy, Terms and License pages. It copies only public assets to `dist/`. The checks verify local links/assets, metadata, the absence of a custom-domain file, and versioned download URLs. All page/asset links are relative, so they work at both a Pages repository subpath and the custom domain.
 
 ## Update version and download links
 
@@ -29,21 +29,10 @@ Edit **`site.config.mjs`**. `version`, `release`, `downloads.windows`, and `down
 
 In repository Settings → Pages, select **GitHub Actions** as the build source. The deployment environment is `github-pages`.
 
-### Custom domain
+### Website address
 
-The desired domain is **novex.mcstone.no**. `public/CNAME` and `site.config.mjs` already reference it. For a custom Actions deployment, GitHub Pages also needs the domain entered in repository Settings → Pages; the CNAME file alone is not sufficient.
-
-At your DNS provider, add/verify this record (DNS has not been changed by this project):
-
-- Type: `CNAME`
-- Name: `novex` (or `novex.mcstone.no` if your provider requires the full name)
-- Target: `mysocksaregone-dev.github.io`
-
-Do not add a second conflicting record for the same hostname. After DNS resolves and GitHub provisions the certificate, enable **Enforce HTTPS** in Pages settings. Domain verification in GitHub account Settings → Pages is recommended to prevent domain takeover.
-
-Official instructions: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
-
-The fallback project URL is https://mysocksaregone-dev.github.io/Novex-Website/ until a custom domain is enabled (GitHub may redirect it once configured).
+The website uses https://mysocksaregone-dev.github.io/Novex-Website/.
+No custom domain or DNS configuration is required. Keep the Custom domain field empty in GitHub Pages settings. `site.config.mjs` supplies the public site URL for canonical and social metadata.
 
 ## Real launcher screenshots
 

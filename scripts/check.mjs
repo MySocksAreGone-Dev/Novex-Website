@@ -8,6 +8,6 @@ for(const page of ['index','download','privacy','terms','license']) {
  for(const match of html.matchAll(/(?:src|href)="(\.\/[^"#]+)(?:#[^"]*)?"/g))await fs.access(path.join('dist',match[1]));
  assert.ok(!/github_pat_|ghp_|sb_secret_|BEGIN PRIVATE KEY/.test(html),'Unexpected secret-shaped content');
 }
-assert.equal((await fs.readFile('dist/CNAME','utf8')).trim(),new URL(config.origin).hostname);
+assert.equal(await fs.access('dist/CNAME').then(() => true, () => false), false, 'Custom domain must not be included');
 for(const url of Object.values(config.downloads))assert.ok(url.includes(`/download/v${config.version}/`));
-console.log('All pages, local assets, metadata, CNAME and download versions checked.');
+console.log('All pages, local assets, metadata and download versions checked.');
