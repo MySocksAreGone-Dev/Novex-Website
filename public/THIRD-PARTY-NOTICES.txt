@@ -1,5 +1,5 @@
 Novex logo, favicon, and launcher UI screenshots
-Source: https://github.com/MineBukserErBorte/Novex-Client
+Source: https://github.com/MySocksAreGone-Dev/Novex-Client
 License included with the source at capture time:
 
 MIT License

@@ -37,13 +37,13 @@ At your DNS provider, add/verify this record (DNS has not been changed by this p
 
 - Type: `CNAME`
 - Name: `novex` (or `novex.mcstone.no` if your provider requires the full name)
-- Target: `minebuksererborte.github.io`
+- Target: `mysocksaregone-dev.github.io`
 
 Do not add a second conflicting record for the same hostname. After DNS resolves and GitHub provisions the certificate, enable **Enforce HTTPS** in Pages settings. Domain verification in GitHub account Settings → Pages is recommended to prevent domain takeover.
 
 Official instructions: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
 
-The fallback project URL is https://minebuksererborte.github.io/Novex-Website/ until a custom domain is enabled (GitHub may redirect it once configured).
+The fallback project URL is https://mysocksaregone-dev.github.io/Novex-Website/ until a custom domain is enabled (GitHub may redirect it once configured).
 
 ## Real launcher screenshots
 
