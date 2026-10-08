@@ -36,7 +36,7 @@ No custom domain or DNS configuration is required. Keep the Custom domain field 
 
 ## Real launcher screenshots
 
-`public/screenshots/` contains real Home, Instances, Mods, Modpacks and Settings captures from the current Novex Client development build on 2026-10-07. Screenshots are explicitly labelled as development UI; downloads stay on the verified published v0.2.0 release.
+`public/screenshots/` contains real Home, Instances, Mods, Modpacks and Settings captures from the current Novex Client development build on 2026-10-07. This UI is now included in the v0.2.1 release; download links point to its verified Windows and Linux assets.
 
 Captures use a separate temporary signed-out Electron profile. No account fixtures or injected UI are used. Empty states are genuine; public Modrinth results are loaded by the application. No personal accounts or game data are included. Images are optimized to WebP.
 
@@ -54,3 +54,7 @@ Website privacy information describes this static site only. There are no websit
 - Browser checks at desktop (1440px) and mobile (390px), including menu, gallery selection, modal opening/Escape, download-page navigation, legal routes, and horizontal overflow.
 - Visual review of all five screenshots for private information.
 - Launcher source repository remains unchanged.
+
+## Website v1.0.1 security review
+
+Reviewed tracked source, Git history, generated HTML, and screenshot privacy. No credential candidates found. There are no npm dependencies or user-submitted HTML. Templates escape configuration; a restrictive Content Security Policy permits only local scripts, styles, images and fonts, with network connections, objects and forms blocked. GitHub Pages deployment uses scoped workflow permissions. This review does not guarantee absence of every vulnerability. Launcher audit details are in its `docs/RELEASE-SECURITY-0.2.1.md`.

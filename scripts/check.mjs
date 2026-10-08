@@ -4,7 +4,7 @@ import path from 'node:path';
 import config from '../site.config.mjs';
 for(const page of ['index','download','privacy','terms','license']) {
  const html=await fs.readFile(`dist/${page}.html`,'utf8');
- assert.match(html,/<html lang="en">/);assert.match(html,/<title>.+<\/title>/);assert.match(html,/<main id="main">/);
+ assert.match(html,/Content-Security-Policy/);assert.match(html,/<html lang="en">/);assert.match(html,/<title>.+<\/title>/);assert.match(html,/<main id="main">/);
  for(const match of html.matchAll(/(?:src|href)="(\.\/[^"#]+)(?:#[^"]*)?"/g))await fs.access(path.join('dist',match[1]));
  assert.ok(!/github_pat_|ghp_|sb_secret_|BEGIN PRIVATE KEY/.test(html),'Unexpected secret-shaped content');
 }
