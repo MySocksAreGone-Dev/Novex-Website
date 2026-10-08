@@ -21,7 +21,7 @@ The build generates Home, Download, Privacy, Terms and License pages. It copies 
 
 ## Update version and download links
 
-Edit **`site.config.mjs`**. `version`, `release`, `downloads.windows`, and `downloads.linux` are the single source for all download buttons and version labels. Use public HTTPS GitHub release URLs. Never put a GitHub token or any other credential in the website.
+Edit **`site.config.mjs`**. `version`, `release`, `downloads.windows`, and `downloads.linux`, `downloads.linuxRpm`, and `downloads.linuxDeb` are the single source for all download buttons and version labels. Use public HTTPS GitHub release URLs. Never put a GitHub token or any other credential in the website.
 
 ## Deployment
 
@@ -36,15 +36,15 @@ No custom domain or DNS configuration is required. Keep the Custom domain field 
 
 ## Real launcher screenshots
 
-`public/screenshots/` contains optimized WebP captures of **Home, Instances, Mods, Modpacks and Settings**, taken from the actual Novex Client Electron application at source commit `b45ce8c`, version 0.1.0, on 2026-09-23.
+`public/screenshots/` contains real Home, Instances, Mods, Modpacks and Settings captures from the current Novex Client development build on 2026-10-07. Screenshots are explicitly labelled as development UI; downloads stay on the verified published v0.2.0 release.
 
-An isolated temporary profile was used, without a Microsoft or Novex account. Three empty demonstration instances were created using the existing Novex instance APIs, without installing or claiming to run Minecraft. Modrinth cards are actual live results. Settings shows only temporary demonstration paths. No UI was drawn or replaced, and no personal accounts, worlds, authentication data, or private screenshots were copied. Images were converted to WebP, without visual alteration. The logo/favicon were copied directly from the launcher assets.
+Captures use a separate temporary signed-out Electron profile. No account fixtures or injected UI are used. Empty states are genuine; public Modrinth results are loaded by the application. No personal accounts or game data are included. Images are optimized to WebP.
 
 To refresh images, run the real launcher with an isolated user-data profile, capture those pages, review for private information, and replace the corresponding WebP files. Keep image dimensions consistent or update the build template's width/height attributes.
 
 ## License and project information
 
-The site deliberately uses neutral licensing language and links to the launcher's authoritative LICENSE. It does not relabel the launcher as open-source or proprietary. At creation, the checked-in launcher LICENSE was MIT. Attribution for reused launcher assets is included in `public/THIRD-PARTY-NOTICES.txt`. Third-party project names/icons in screenshots keep their respective rights.
+The site deliberately uses neutral licensing language and links to the launcher's authoritative LICENSE. It does not relabel the launcher as open-source or proprietary. Attribution for reused launcher assets is included in `public/THIRD-PARTY-NOTICES.txt`. Third-party project names/icons in screenshots keep their respective rights.
 
 Website privacy information describes this static site only. There are no website account forms, analytics scripts, tracking cookies, external fonts, or secret keys. GitHub may process hosting/download request information under its own privacy policy. The desktop app has separate in-app legal information.
 

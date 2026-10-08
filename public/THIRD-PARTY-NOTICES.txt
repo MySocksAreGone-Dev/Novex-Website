@@ -1,6 +1,6 @@
-Novex logo, favicon, and launcher UI screenshots
+Novex logo and favicon (assets retained from the original website)
 Source: https://github.com/MySocksAreGone-Dev/Novex-Client
-License included with the source at capture time:
+License included with those assets at initial publication (retained notice):
 
 MIT License
 
@@ -25,3 +25,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 Third-party names and icons visible within content-browser screenshots belong to their respective owners.
+
+Updated launcher screenshots (2026-10-07): Novex Client, Copyright © 2026 Wild. All Rights Reserved. Published on this official project website at the project owner’s request. The current launcher LICENSE governs the current source; the historical asset notice above does not relicense it.
