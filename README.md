@@ -36,7 +36,7 @@ No custom domain or DNS configuration is required. Keep the Custom domain field 
 
 ## Real launcher screenshots
 
-`public/screenshots/` contains real Home, Instances, Mods, Modpacks and Settings captures from the current Novex Client development build on 2026-10-07. This UI is now included in the v0.2.2 release; download links point to its verified Windows and Linux assets.
+`public/screenshots/` contains real Home, Instances, Mods, Modpacks and Settings captures from the current Novex Client development build on 2026-10-07. This UI is now included in the v0.2.3 release; download links point to its verified Windows and Linux assets.
 
 Captures use a separate temporary signed-out Electron profile. No account fixtures or injected UI are used. Empty states are genuine; public Modrinth results are loaded by the application. No personal accounts or game data are included. Images are optimized to WebP.
 
@@ -57,4 +57,4 @@ Website privacy information describes this static site only. There are no websit
 
 ## Website v1.0.1 security review
 
-Reviewed tracked source, Git history, generated HTML, and screenshot privacy. No credential candidates found. There are no npm dependencies or user-submitted HTML. Templates escape configuration; a restrictive Content Security Policy permits only local scripts, styles, images and fonts, with network connections, objects and forms blocked. GitHub Pages deployment uses scoped workflow permissions. This review does not guarantee absence of every vulnerability. Launcher audit details are in its `docs/RELEASE-SECURITY-0.2.2.md`.
+Reviewed tracked source, Git history, generated HTML, and screenshot privacy. No credential candidates found. There are no npm dependencies or user-submitted HTML. Templates escape configuration; a restrictive Content Security Policy permits only local scripts, styles, images and fonts, with network connections, objects and forms blocked. GitHub Pages deployment uses scoped workflow permissions. This review does not guarantee absence of every vulnerability. Launcher audit details are in its `docs/RELEASE-SECURITY-0.2.3.md`.
